@@ -22,7 +22,11 @@ button.addEventListener('click', function () {
             nameCity.innerHTML = nameValue;
             temp.innerHTML = cel + " °C";
             desc.innerHTML = descValue;
-
+            setTimeout(() => {
+                nameCity.innerHTML = '';
+                temp.innerHTML = '';
+                desc.innerHTML = '';
+            }, 6000);
         })
 
 

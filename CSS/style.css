@@ -171,6 +171,7 @@ h1 {
 
 .image-container img:hover {
     animation: rotateZoom 1s infinite alternate;
+
 }
 
 .modal {
@@ -437,7 +438,7 @@ input[type="submit"] {
 
 /* Styling for the weatherDisplay section */
 .weatherDisplay {
-    margin-top: 130px;
+    margin-top: 170px;
     text-align: center;
     background-color: rgb(30, 98, 76);
     border-radius: 10px;
