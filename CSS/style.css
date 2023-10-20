@@ -437,7 +437,7 @@ input[type="submit"] {
 
 /* Styling for the weatherDisplay section */
 .weatherDisplay {
-    margin-top: 60px;
+    margin-top: 130px;
     text-align: center;
     background-color: rgb(30, 98, 76);
     border-radius: 10px;
