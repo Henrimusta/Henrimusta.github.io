@@ -2,51 +2,104 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+header {
+    background-color: rgb(30, 98, 76);
+}
+
+.nav-branding {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.nav-menu li {
+    list-style: none;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
 
 .navbar {
-    background-color: rgb(30, 98, 76);
-    color: #fff;
+    min-height: 70px;
     display: flex;
-    width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: sticky;
-    top: 0;
-
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
 }
 
-.navbar ul {
-    list-style: none;
-    padding: 0;
+.nav-menu {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
 }
 
-.navbar li {
-    padding: 20px;
-    margin: 10px;
-    justify-content: center;
-
+.nav-link {
+    transition: 0.7s ease;
 }
 
-.navbar a {
-    color: #fff;
-    text-decoration: none;
-    justify-content: center;
-    font-size: calc(12px + (32 - 16) * (100vw - 320px) / (1280 - 320));
-    font-size: 16px;
+.nav-link:hover {
+    color: black;
 }
 
-.navbar a:hover {
-    color: #000000;
+.hamburger {
+    display: none;
+    cursor: pointer;
 }
 
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
 
+@media(max-width:768px) {
+    .hamburger {
+        display: block;
+    }
 
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
 
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: 100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(30, 98, 76);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
 
 h1 {
     text-align: center;
@@ -62,9 +115,9 @@ h1 {
 .bottom-image img {
     position: fixed;
     bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
     height: auto;
 
 }
@@ -182,8 +235,6 @@ h3 {
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: calc(12px + (32 - 16) * (100vw - 320px) / (1280 - 320));
-
 }
 
 .survey-form textarea {
@@ -228,7 +279,6 @@ div.about {
 
 div.about h1 {
     text-align: center;
-    font-size: calc(16px + (32 - 16) * (100vw - 320px) / (1280 - 320));
     color: #000000;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -241,14 +291,10 @@ div.about h2 {
     margin-bottom: 50px;
 }
 
-
 div.about p {
     padding-left: 20px;
     padding-right: 20px;
 }
-
-
-
 
 .cv {
     display: flex;
