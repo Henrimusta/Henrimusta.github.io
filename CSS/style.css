@@ -293,8 +293,8 @@ div.about h2 {
 }
 
 div.about p {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .cv {
@@ -464,4 +464,16 @@ input[type="submit"] {
 .temp {
     font-size: 18px;
     margin-top: 10px;
+}
+
+.about-text {
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
 }
