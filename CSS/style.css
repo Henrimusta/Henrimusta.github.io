@@ -297,7 +297,7 @@ div.about p {
     padding-right: 20%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 390px) {
     div.about p {
         padding-left: 5%;
         padding-right: 5%;
