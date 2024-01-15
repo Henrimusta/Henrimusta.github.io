@@ -275,6 +275,7 @@ div.about {
     font-size: ;
     color: #000000;
     margin-top: 50px;
+    margin-bottom: 150px;
 
 }
 
@@ -295,6 +296,7 @@ div.about h2 {
 div.about p {
     padding-left: 20%;
     padding-right: 20%;
+    ;
 }
 
 @media screen and (max-width: 600px) {
