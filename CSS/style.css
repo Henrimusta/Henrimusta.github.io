@@ -293,8 +293,16 @@ div.about h2 {
 }
 
 div.about p {
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+@media screen and (max-width: 600px) {
+    div.about p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
 }
 
 .cv {
